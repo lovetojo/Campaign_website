@@ -68,3 +68,40 @@ const scrollRevealOption = {
     interval: 500,
     origin: "right",
   });
+
+// payment gateway
+document.addEventListener("DOMContentLoaded", function() {
+  const donationButtons = document.querySelectorAll(".donate-btn");
+  const donationAmountInput = document.getElementById("selected-amount");
+  const emailInput = document.getElementById("email");
+  const donationForm = document.getElementById("donation-form");
+  const paypalForm = document.getElementById("paypal-form");
+  const paypalAmountInput = document.getElementById("paypal-amount");
+  const paypalEmailInput = document.getElementById("paypal-email");
+
+  donationButtons.forEach(button => {
+      button.addEventListener("click", function() {
+          const amount = this.getAttribute("data-amount");
+          donationAmountInput.value = amount;
+
+          // Highlight the selected button
+          donationButtons.forEach(btn => btn.classList.remove("selected"));
+          this.classList.add("selected");
+      });
+  });
+
+  donationForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const selectedAmount = donationAmountInput.value;
+      const email = emailInput.value;
+
+      if (selectedAmount && email) {
+          paypalAmountInput.value = selectedAmount;
+          paypalEmailInput.value = email;
+          paypalForm.submit();
+      } else {
+          alert("Please select a donation amount and enter your email address.");
+      }
+  });
+});

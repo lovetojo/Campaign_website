@@ -697,3 +697,73 @@ nav {
 .container form .submit-btn:hover{
   background: #527df3;
 }
+
+
+.donation-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+input[type="email"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donation-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.donate-btn {
+  background-color: #0070ba;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+  background-color: #005f9e;
+}
+
+.btn.submit-btn {
+  background-color: #5ba728;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donate-btn.selected {
+  background-color: #72b6e4;
+  box-shadow: 0 0 10px rgba(6, 151, 248, 0.3);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
