@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
         rel="stylesheet"
@@ -22,11 +23,11 @@
                 </div>
             </div>
             <ul class="nav__links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#service">Mission</a></li>
                 <li><a href="#explore">Explore</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="btn nav__btn">Make Donations</button>
         </nav>
@@ -39,24 +40,10 @@
     <section class="section__container registering__container">
         <form action="/" class="registering__form">
             <div class="input__group">
-                <span><i class="ri-user-fill"></i></span>
-                <div>
-                    <label for="check-in">Name</label>
-                    <input type="text" placeholder="Fullname" />
-                </div>
-            </div>
-            <div class="input__group">
                 <span><i class="ri-mail-line"></i></span>
                 <div>
                     <label for="check-out">Email</label> 
                     <input type="text" placeholder="Email" />
-                </div>
-            </div>
-            <div class="input__group">
-                <span><i class="ri-phone-line"></i></span>
-                <div>
-                    <label for="guest">Phone Number</label>
-                    <input type="text" placeholder="Phone Number" />
                 </div>
             </div>
             <div class="input__group input__btn">
@@ -74,26 +61,20 @@
             <h2 class="section__header">Why should the people choose me for this position!</h2>
             <p class="section__description">
                 Choosing me for this position means choosing a dedicated, innovative, and results-oriented leader who is deeply committed to the continuous growth and success. I have a proven track record of unwavering commitment to the development of the IBLCDA. My initiatives have not only streamlined processes but also enhanced the overall impact of our programs. I am deeply invested in our cause and work tirelessly to advance our objectives, ensuring that we continue to make a positive and lasting impact.    </p>
-            <div class="about__btn">
-                <a href="about.html"><button class="btn"> Read More</button></a>
-            </div>
         </div>
     </section>
 
-    <section class="section__container about__container" id="about">
-        <div class="about__image">
-            <img src="./assets/about_2.jpg" alt="about" />
-        </div>
-        <div class="about__content">
-            <p class="section__subheader">MISSION & VISION</p>
-            <h2 class="section__header">We Can Make Solution Everything To Our Demand.!</h2>
-            <p class="section__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate dui pretium, libero faucibus sit aliquet cras. Tristique semper adipiscing massa placerat dictumst amet, libero vitae. Eget purus blandit velit sit mauris nibh porta. Sagittis iaculis feugiat sed sem diam, sagittis ullamcorper. Vel posuere justo
-            </p>
-            <div class="about__btn">
-            <button class="btn">Read More</button>
+    <section class="newsletter">
+        <div class="wrapper">
+            <div id="subscribebox">
+              <i class="fa fa-envelope fa-4x"></i>
+              <h3>Join Our Newsletter</h3>
+              <form>
+                <input type="text" placeholder="Enter email" id="email-input">
+                <input type="submit" value="Join" id="subscribe-button">
+              </form>
             </div>
-        </div>
+          </div>
     </section>
   
     <section class="explore" id="explore">
@@ -118,54 +99,56 @@
         </div>
     </section>
 
-    <footer class="footer" id="contact">
-        <div class="section__container footer__container">
-            <div class="footer__col">
-                <div class="logo">
-                    <a href="#home"><img src="./assets/logo_2.png" alt="logo" /></a>
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo_name">Campaign website</span>
                 </div>
-                <p class="section__description">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, make specimen book.
-                </p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div class="footer__col">
-                <h4>QUICK LINKS</h4>
-                <ul class="footer__links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Mission</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <div class="footer__col">
-                <h4>OUR SERVICES</h4>
-                <ul class="footer__links">
-                    <li><a href="#">me meh meh</a></li>
-                    <li><a href="#">blah blah blah</a></li>
-                    <li><a href="#">bleh bleh bleh</a></li>
-                    <li><a href="#">something somehting</a></li>
-                </ul>
-            </div>
-            <div class="footer__col">
-                <h4>CONTACT US</h4>
-                <ul class="footer__links">
-                    <li><a href="#">Mrbalogun@gmail.com</a></li>
-                </ul>
-                <div class="footer__socials">
-                    <a href="#"><img src="./assets/facebook.png" alt="facebook" /></a>
-                    <a href="#"><img src="./assets/instagram.png" alt="instagram" /></a>
-                    <a href="#"><img src="./assets/youtube.png" alt="youtube" /></a>
-                    <a href="#"><img src="./assets/twitter.png" alt="twitter" /></a>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">About us</li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <br>Consequatur tempore sint hic reiciendis! Fugit ratione, 
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Quick Links</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Mission</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Something</li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link_name">Newsletter</li>
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                </ul>
+          </div>
         </div>
-        <div class="footer__bar">
-            Copyright © 2024 something. All rights reserved.
-        </div>
-    </footer>
-  
+      </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
