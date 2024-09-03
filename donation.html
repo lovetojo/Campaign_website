@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
         rel="stylesheet"
@@ -37,36 +37,15 @@
     </header> 
        
     <section class="section__container registering__container">
-        <div class="donation-container">
-            <h1>Make a Donation</h1>
-            <form id="donation-form">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                
-                <label for="donation-amount">Select Amount</label>
-                <div class="donation-buttons">
-                    <button type="button" class="donate-btn" data-amount="500">₦500</button>
-                    <button type="button" class="donate-btn" data-amount="1000">₦1000</button>
-                    <button type="button" class="donate-btn" data-amount="2000">₦2000</button>
-                    <button type="button" class="donate-btn" data-amount="4000">₦4000</button>
-                    <button type="button" class="donate-btn" data-amount="5000">₦5000</button>
-                </div>
-
-                <input type="hidden" id="selected-amount" name="amount" value="">
-                
-                <button type="submit" class="btn submit-btn">Proceed to PayPal</button>
-            </form>
-
-            <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" style="display: none;">
-                <input type="hidden" name="cmd" value="_donations">
-                <input type="hidden" name="business" value="your-paypal-email@example.com">
-                <input type="hidden" name="currency_code" value="USD">
-                <input type="hidden" id="paypal-amount" name="amount" value="">
-                <input type="hidden" name="return" value="http://yourwebsite.com/thank-you">
-                <input type="hidden" name="cancel_return" value="http://yourwebsite.com/cancel">
-                <input type="hidden" id="paypal-email" name="email" value="">
-            </form>
-        </div>
+        <div class="container">
+            <div class="transfer-section">
+              <h3 class="title">Bank Transfer Details</h3>
+              <p><strong>Account Number:</strong> 1234567890</p>
+              <p><strong>Bank Name:</strong> Something Bank</p>
+              <p class="else-text">Else</p>
+              <button class="submit-btn">Proceed to PayPal</button>
+            </div>
+          </div>           
     </section>
  
     <section class="explore" id="explore">

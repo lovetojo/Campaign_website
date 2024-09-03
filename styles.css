@@ -257,6 +257,58 @@ nav {
   .registering__container {
     padding-block: 0;
   }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+  }
+  
+  .transfer-section {
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .transfer-section .title {
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .transfer-section p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .transfer-section .else-text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #888;
+    font-weight: bold;
+  }
+  
+  .submit-btn {
+    width: 70%;
+    padding: 12px;
+    font-size: 17px;
+    background: #2e92cc;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #2679a5;
+  }
+  
   
   .registering__form {
     padding: 2rem;
